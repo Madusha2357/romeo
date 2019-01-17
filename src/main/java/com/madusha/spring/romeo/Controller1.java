@@ -18,7 +18,19 @@ public class Controller1 {
 	@RequestMapping("/")
 	public String hello() {
 		System.out.println("Hello World");
-		return "Hello Worlds";
+		return "Hello World";
+	}
+	
+	@RequestMapping("/randika/madusha")
+	public int hi() {
+		System.out.println("Hello");
+		
+		int x=50;
+		int y=20;
+		
+		int z = x+y;
+		return z;
 	}
 
+	
 }
