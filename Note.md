@@ -42,6 +42,8 @@ Commit|Commit changes to head(but not yet to remote repository)|git commit -m "M
 |||
 
 
+
+
 **Using this commands we can can connetc between our local server and remote server.**
 
 

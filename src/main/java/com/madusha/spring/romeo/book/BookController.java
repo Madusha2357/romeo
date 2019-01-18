@@ -1,4 +1,4 @@
-package com.madusha.spring.romeo.topic;
+package com.madusha.spring.romeo.book;
 
 import java.util.List;
 
@@ -7,13 +7,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class TopicController {
+public class BookController {
 	
 	@Autowired
-	private TopicService topicService;
+	private BookService bookservice;
 
-	@RequestMapping("/topics")
-	public List<Topic> getAllTopics() {
-		return topicService.getAllTopics();
+	@RequestMapping("/books")
+	public List<Book> getAllBooks(){
+		return bookservice.getAllBooks();
+		
+		
 	}
+	
+	 
+	
 }
